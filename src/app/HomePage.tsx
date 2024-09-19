@@ -3,7 +3,7 @@ import React from "react";
 import styles from "@/app/page.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { ROUTES } from "@/app/routes/ROUTES";
+import { ROUTES } from "@/app/routes/routes";
 
 export const HomePage = () => {
   const router = useRouter();

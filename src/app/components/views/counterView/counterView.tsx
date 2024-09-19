@@ -4,7 +4,7 @@ import { ButtonText } from "@/app/components/molecules/buttonText/ButtonText";
 import { useCounter } from "@/app/components/organisms";
 import s from "./style.module.css";
 import { useRouter } from "next/navigation";
-import { ROUTES } from "@/app/routes/ROUTES";
+import { ROUTES } from "@/app/routes/routes";
 
 export const CounterView: React.FC = () => {
   const { index, increment, decrement } = useCounter();
