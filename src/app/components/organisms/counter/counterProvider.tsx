@@ -1,7 +1,6 @@
 "use client";
 import React, { createContext, useCallback, useContext, useState } from "react";
 import s from "./style.module.css";
-import { useDebounce } from "@/utils";
 
 type CounterContextType = {
   index: number;
