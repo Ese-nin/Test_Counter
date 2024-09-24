@@ -1,5 +1,6 @@
 "use client";
 import React, { useCallback } from "react";
+import { Text } from "@/app/components/atoms";
 import { ButtonText } from "@/app/components/molecules/buttonText/ButtonText";
 import { useCounter } from "@/app/components/organisms";
 import s from "./style.module.css";
@@ -20,7 +21,9 @@ export const CounterView: React.FC = () => {
         <ButtonText callBack={goToHome} text={"back"} />
       </div>
       <div className={s.counter}>
-        <span className={s.count}>{index}</span>
+        <div className={s.count}>
+          <Text text={String(index)} />
+        </div>
         <div className={s.buttons}>
           <ButtonText callBack={increment} text="Increment" />
           <ButtonText style={"primary"} callBack={decrement} text="Decrement" />
